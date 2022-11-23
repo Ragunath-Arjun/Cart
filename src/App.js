@@ -3,7 +3,12 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  return <Cart />;
+    return (
+      <>
+    <Header></Header>
+    <Cart></Cart>
+    </>
+    );
 }
 
 function Cart() {
