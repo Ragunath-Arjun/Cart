@@ -65,6 +65,7 @@ function App() {
     cartList.splice(itemIndex,1);
     setCart([...cartList])
     setTotal(Total-product.price)
+    setHeader(header-1)
   }
 
 
