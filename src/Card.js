@@ -1,20 +1,19 @@
 import { useState } from "react";
 
-export default function Card(props){
-    const [cart,setCart]=useState(0);
-
+export default function Card({product,addToCart}){
     return(
-    <div className="col-lg-3">
+    <div className="col-lg-4" >
             <div className="card">
               <img
                 className="card-img-top"
-                src="https://fdn.gsmarena.com/imgroot/reviews/20/oneplus-nord/review/lifestyle/-1024w2/gsmarena_001.jpg"
+                src={product.image}
                 alt="Card image cap"
               ></img>
               <div className="card-body">
-                <h5 className="card-title">{props.name}</h5>
-                <p className="card-text">Rs.{props.price}</p>
-                <button className="btn btn-primary" onClick={()=>{setCart(cart+1)}}>Add to Cart</button>
+                <h5 className="card-title">{product.name}</h5>
+                <p className="card-text">Rs.{product.price}</p>
+                <button className="btn btn-primary" onClick={()=>{
+                  addToCart(product)}}>Add to Cart</button>
               </div>
             </div>
           </div>

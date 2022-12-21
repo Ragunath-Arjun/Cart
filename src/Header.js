@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-export default function Header(props) {
-    const [cart,setCart]=useState(0);
+export default function Header({header}) {
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -71,7 +70,7 @@ export default function Header(props) {
                 Cart
                 <sup>
                   <span class="badge bg-dark text-white ms-1 rounded-pill">
-                    {cart}
+                    {header}
                   </span>
                 </sup>
               </button>

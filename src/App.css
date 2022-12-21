@@ -36,6 +36,10 @@
     transform: rotate(360deg);
   }
 }
+img{
+  width:5rem;
+  height:12rem;
+}
 .card{
   width:14rem !important;
   margin-top:50px;
